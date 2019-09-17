@@ -1,0 +1,20 @@
+{
+  "name": "raw-server",
+  "version": "1.0.0",
+  "description": "making a server from scratch with no dependencies",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --experimental-modules src/main.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/architecturejs/raw-server.git"
+  },
+  "keywords": [],
+  "author": "аневризма",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/architecturejs/raw-server/issues"
+  },
+  "homepage": "https://github.com/architecturejs/raw-server#readme"
+}
