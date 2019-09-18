@@ -2,12 +2,9 @@ import http from 'http';
 
 import { PORT } from './constants/index.mjs';
 
-(function main() {
-  const server = http.createServer(function server(req, res) {
-    res.end('raw server');
-  });
+import server from './core/server.mjs';
 
-  server.listen(PORT, function serverListener() {
-    console.log(`server listening at port: ${PORT}`)
-  });
-}());
+// start server at given port
+server.listen(PORT, function serverListener() {
+  console.log(`server listening at port: ${PORT}`)
+});
