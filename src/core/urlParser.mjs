@@ -12,8 +12,10 @@ export default function urlParser(req) {
   const urlPath = parsedUrl.pathname;
   // trim slashes
   const trimmedPath = urlPath.replace(/^\/+|\/+$/g, '');
-  // get method
+  // get HTTP method
   const method = req.method;
+  // get HTTP headers as an object
+  const { headers } = req;
 
   return {
     method,
